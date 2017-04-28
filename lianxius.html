@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			/*头部固定*/
+			
+			.header {
+				height: 60px;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				/*background-color: rgb(29, 155, 255);*/
+				overflow: hidden;
+			}
+			/*左边*/
+			
+			.a_pic {
+				float: left;
+				width: 120px;
+				height: 60px;
+				margin-left: 18%;
+				margin-top: 15px;
+			}
+			
+			.a_pic img {
+				width: 120px;
+				height: 30px;
+			}
+			/*右边*/
+			
+			.nav_right {
+				float: left;
+				overflow: hidden;
+				width: 350px;
+				margin-left: 30%;
+				margin-right: 5%;
+			}
+			
+			.nav_right li {
+				width: 70px;
+				height: 60px;
+				list-style: none;
+				float: left;
+			}
+			
+			.nav_right li a {
+				width: 70px;
+				height: 60px;
+				display: block;
+				text-decoration: none;
+				color: white;
+				font-size: 24px;
+				text-align: center;
+				line-height: 60px;
+			}
+			
+			.nav_right li a:hover {
+				background-color: rgb(52, 180, 255);
+			}
+			/*响应式@media*/
+			
+			@media only screen and (max-width: 1250px) {
+				.a_pic {
+					margin-left: 15%;
+				}
+				.nav_right {
+					margin-left: 22%;
+					margin-right: 5%;
+				}
+			}
+			
+			@media only screen and (max-width: 850px) {
+				.a_pic {
+					margin-left: 10%;
+				}
+				.nav_right {
+					margin-left: 20%;
+					margin-right: 5%;
+				}
+			}
+			
+			@media only screen and (max-width: 750px) {
+				.a_pic {
+					display: none;
+				}
+				.nav_right {
+					margin-left: 35%;
+					margin-right: 20%;
+				}
+			}
+			/*底部*/
+			
+			.a_footer {
+				width: 100%;
+				height: 80px;
+				background-color: rgb(67, 67, 67);
+				text-align: center;
+				color: white;
+				padding-top: 30px;
+			}
+			
+			.a_footer p:nth-child(1) {
+				/*margin-top: 10px;*/
+				margin-bottom: 10px;
+			}
+			/*以上是头部底部*/
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				background-image: url(img/联系我们_背景.jpg);
+				background-position: center;
+			}
+			.box{
+				width: 75%;
+				margin: 0 auto;
+				max-width: 800px;
+				padding-top: 70px;
+			}
+			.top{
+				width: 100%;
+			}
+			.top img{
+				width: 100%;
+				height: 100%;
+			}
+			.zhuce{
+				border: 2px solid #17acff;
+    				width: 100%;
+    				position: relative;
+    				top: -2px;
+			}
+			.logo{
+				text-align: right;
+				padding: 12px;
+			}
+			.logo span{
+				margin: 0 5px;
+				position: relative;
+			}
+			.logo span label{
+				display: inline-block;
+				width: 96px;
+				position: absolute;
+				left: -5px;
+				top: 20px;
+				display: none;
+			}
+			.logo span label img{
+				width: 100%;
+				height: 100%;
+			}
+			/*表单*/
+			form{
+				width: 70%;
+    				margin: 10px auto 0;
+    				min-width: 400px;
+			}
+			input{
+				color: #fff;
+    				width: 100%;
+    				display: block;
+    				border: none;
+    				background-color: rgba(192,232,253,.6);
+    				margin: 12px auto;
+    				padding: 6px 12px;
+    				border-radius: 4px;
+			}
+			input::-webkit-input-placeholder { 
+				color: #fff; 
+			} 
+			#btn{
+				width: 21%;
+				display: block;
+    				border: none;
+    				background: rgba(192,232,253,.6);
+    				margin: 12px auto;
+    				padding: 6px 12px;
+    				border-radius: 4px;
+			}
+			/*more*/
+			.more{
+				min-width: 400px;
+				width: 70%;
+				margin: 36px auto 24px;
+				overflow: hidden;
+			}
+			.more div{
+				float: left;
+				width: 33%;
+			}
+			.more_r{
+				text-align: center;
+			}
+			.more div p{
+				font-size: 14px;
+				line-height: 1.5em;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--头部固定-->
+		<div class="header">
+			<div class="a_pic">
+				<img src="img/首页logo-1.png"/>
+			</div>
+			
+			<ul class="nav_right">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="product.html">产品</a></li>
+				<li><a href="dynamic.html">动态</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="login.html">登录</a></li>
+			</ul>
+		</div>
+		<div class="box">
+			<div class="top">
+				<img src="img/联系我们_top.png"/>
+			</div>
+			<div class="zhuce">
+				<div class="logo">
+					<span><img src="img/联系我们_信封.png"/></span>
+					<span><img src="img/联系我们_安卓.png"/><label><img src="img/联系我们_安卓二维码.png"/></label></span>
+					<span><img src="img/联系我们_苹果.png"/><label><img src="img/联系我们_苹果二维码.png"/></label></span>
+				</div>
+				<form action="lianxius.html" method="post">
+					<input type="text" name="user" id="user" value="" placeholder="姓名" />
+					<input type="text" name="password" id="password" value="" placeholder="手机号码" />
+					<input type="text" name="mail" id="mail" value="" placeholder="电子邮件" />
+					<input type="text" name="question" id="question" value="" placeholder="需求/问题提交" />
+					<input id="btn" type="submit" value="提交"/>
+				</form>
+				<div class="more">
+					<div class="more_l">
+						<p>创始自2013</p>
+						<p>于海口市西海岸西秀海滩</p>
+						<p>Email: contact@zicc.cc</p>
+					</div>
+					<div class="more_m">
+						<p>中关村国家自主创新示范区</p>
+						<p>中关村北大街127-1号</p>
+						<p>全国免费热线   400-001-806</p>
+					</div>
+					<div class="more_r">
+						<img src="img/联系我们_微信公众号.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var zhuce=document.getElementsByClassName('zhuce')[0];
+		var box=document.getElementsByClassName('box')[0];
+		zhuce.style.width=box.offsetWidth-4+'px';
+		var inputs=document.getElementsByTagName('input');
+		var form=document.getElementsByTagName('form')[0];
+		for(var i=0;i<4;i++){
+			inputs[i].style.width=form.offsetWidth-24+'px';
+		}
+		window.onresize=function(){
+			console.log(box.offsetWidth);
+			zhuce.style.width=box.offsetWidth-4+'px';
+			for(var i=0;i<4;i++){
+				inputs[i].style.width=form.offsetWidth-24+'px';
+			}
+		}
+		var span=document.querySelectorAll('.logo>span');
+		var label=document.querySelectorAll('.logo>span>label');
+		for(var i=1;i<3;i++){
+			span[i].index=i;
+			span[i].onmouseover=function(){
+				label[this.index-1].style.display="block";
+			}
+			span[i].onmouseout=function(){
+				label[this.index-1].style.display="none";
+			}
+		}
+		var btn=document.getElementById('btn');
+		btn.onclick=function(){
+			if(inputs[0].value==""){
+				alert("请填写姓名");
+			}
+			if(inputs[1].value==""){
+				alert("请填写手机号码");
+			}
+			if(inputs[2].value==""){
+				alert("请填写电子邮件");
+			}
+			if(inputs[3].value==""){
+				alert("请填写问题");
+			}
+			for (var j=0;j<4;j++) {
+				if(inputs[j].value!=""){
+					if(j>=3){
+						alert("提交成功");
+					}
+				}else{
+					break;
+				}
+			}
+		}
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

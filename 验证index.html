@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/firstpage.css"/>
+		<style type="text/css">
+		
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.wrap{
+				/*border: 1px solid green;*/
+				/*padding: 10px;*/
+				margin: auto;
+				width: 400px;
+				height: 600px;
+				background-color: gainsboro;
+			}
+			.wrap img{
+				/*float: left;*/
+			}
+			
+				input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+color: #f00;
+}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="wrap">
+			<input type="text" placeholder="哇哈哈" onfocus="this.style.color='green';this.value = '巴拉拉';" style="color: red;"/>
+		<!--<input type="text" name="input" id="input" value="" />-->
+		
+
+		</div>
+		
+		
+	
+	</body>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var i, j;
+
+			$(function() {
+
+				i = $(".animation").length - 1;
+
+				j = i;
+
+				setInterval("Toggle()", 5000);
+
+			});
+
+			function Toggle() {
+
+				var m = j % i;
+
+				j++;
+
+				//alert(i+"-"+j+"-"+m);
+
+				$($(".animation").get(m)).slideToggle("fast")
+
+				//$("p").slideToggle("slow");
+
+			}
+
+			function toDownload() {
+				location.href = "http://7xiobe.com2.z0.glb.qiniucdn.com/downloadindex.html";
+			}
+	</script>
+</html>

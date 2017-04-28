@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			/*header*/
+			.nav_right li:nth-child(2) a{
+				background-color: rgb(52, 180, 255);
+			}
+			/*center*/
+			.centerone{
+				min-width: 850px;
+				position: relative;
+			}
+			.centerone img{
+				width: 100%;
+			}
+			.center1{
+				width: 300px;
+				height: 200px;
+				position: absolute;
+			    color: white;
+			    top: 20%;
+			    left: 22%;
+			    text-align: left;
+			}
+			.center1 h1{
+				font-size: 40px;
+			}
+			.center1 p{
+				margin-top: 20px;
+				font-size: 25px;
+			}
+			.center1 li{
+				width: 108px;
+				height: 41px;
+				margin-top: 20px;
+				text-align: center;
+				background-color: dodgerblue;
+			}
+			.center1 li:hover{
+				opacity: 0.8;
+			}
+			.center1 li a{
+				color: white;
+				line-height: 41px;
+			}
+			.center11{
+				width: 97px;
+				height: 97px;
+				position: absolute;
+				top: 150px;
+				left: 5px;
+				opacity: 0;
+				transition: all 1s;
+			}
+			.center2{
+				width: 340px;
+				position: absolute;
+				top: 20%;
+				right: 20%;
+			}
+			.center2 img{
+				width: 100%;
+				height: 100%;
+			}
+			/*er*/
+			.centertwo{
+				width: 100%;
+				text-align: center;
+				line-height: 108px;
+			}
+			.centertwo1{
+				padding-top: 20px;
+				width: 100%;
+				margin: auto;
+			}
+			.centertwo1 img{
+				width: 30%;
+				margin-left: 9.5%;
+				margin-right: 9.5%;
+			}
+			.centertwo1:nth-child(1){
+				background-color: #EEEEEE;
+			}
+			.centertwo1:nth-child(3){
+				background-color: #EEEEEE;
+			}
+			
+			.a_footer p a{
+				color: white;
+				padding: 6px;
+				border: 1px solid white;
+				border-radius: 5px;
+			}
+			
+			
+			@media only screen and (max-width: 850px) {
+				.centertwo1 img{
+					width: 20%;
+					margin-left: 14.5%;
+					margin-right: 14.5%;
+				}
+				.center1{
+					position: absolute;
+				    top: 20%;
+				    left: 5%;
+				}
+				.centerone{
+					min-width: 400px;
+					position: relative;
+				}
+				.center2{
+					width: 40%;
+					position: absolute;
+					top: 20%;
+					right: 30%;
+				}
+				.center2 img{
+					width: 100%;
+					height: 100%;
+				}
+				.center1 h1{
+					font-size: 30px;
+				}
+				.center1 p{
+					margin-top: 20px;
+					font-size: 18px;
+				}
+				
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<!--头部固定-->
+		<div class="header">
+			<div class="a_pic">
+				<img src="img/首页logo-1.png" />
+			</div>
+
+			<ul class="nav_right">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="product.html">产品</a>
+				</li>
+				<li>
+					<a href="dynamic.html">动态</a>
+				</li>
+				<li>
+					<a href="about.html">关于</a>
+				</li>
+				<li>
+					<a href="login.html">登录</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		<!--内容-->
+		<div class="centerone">
+			<img src="img/关于_用户_大图.jpg"/>
+			<div class="center1">
+				<h1>用户画像</h1>
+				<p>精准描绘您的客户属性</p>
+				<li id="li1"><a href="">扫码下载</a></li>
+				<div class="center11"><img src="img/产品_客流_二维码.png"/></div>
+			</div>
+			<div class="center2">
+				<img src="img/关于_用户_女生.png"/>
+			</div>
+		</div>
+		<div class="centertwo">
+			<div class="centertwo1">
+				<img src="img/用户_1.png"/>
+				<img src="img/用户_2.png"/>
+			</div>
+			<div class="centertwo1">
+				<img src="img/用户_3.png"/>
+				<img src="img/用户_4.png"/>
+			</div>
+			<div class="centertwo1">
+				<img src="img/用户_5.png"/>
+				<img src="img/用户_6.png"/>
+			</div>
+			<div class="centertwo1">
+				<img src="img/用户_7.png"/>
+				<img src="img/用户_8.png"/>
+			</div>
+		</div>
+		
+		
+	<!--底部-->
+		<div class="a_footer">
+			<p><a href="lianxius.html">联系我们</a></p>
+			<p>北京紫尘咨询有限责任公司</p>
+		</div>
+		
+	</body>
+	<script>
+		var li1 = document.getElementById("li1");
+		var erweima = document.getElementsByClassName("center11")[0];
+		li1.onmouseover = function(){
+			erweima.style.opacity = 1;
+		}
+		li1.onmouseleave = function(){
+			erweima.style.opacity = 0;
+		}
+		
+	</script>
+</html>

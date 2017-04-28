@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			.box{
+				width: 100%;
+				height: 100%;
+				background-image: url(img/登录_背景.png);
+				text-align: center;
+			}
+			.box img{
+				margin-top: 80px;
+				margin-bottom: 20px;
+			}
+			.denglu{
+				width: 60%;
+				margin: 0 auto;
+				text-align: left;
+				background-color: #eee;
+    				border-radius: 5px;
+    				overflow: hidden;
+    				padding: 15px;
+			}
+			.denglu h1{
+				font-size: 24px;
+				margin-top: 20px;
+    				margin-bottom: 10px;
+    				color: inherit;
+			}
+			
+			.denglu p{
+				font-size: 13px;
+			}
+			.user,.password{
+				/*padding-right: 15px;*/
+				width: 100%;
+				position: relative;
+				margin: 25px 0;
+				font-size: 13px;
+			}
+			.user #user,.password #password{
+				padding: 6px 130px 6px 25px;
+			}
+			.user span{
+				bottom: 0;
+    				color: #909090;
+   				display: inline-block;
+    				font-size: 14px;
+    				left: 5px;
+    				line-height: 35px;
+    				padding: 0 3px;
+    				position: absolute;
+    				top: 0;
+    				z-index: 2;
+			}
+			
+			#btn{
+				float: right;
+				background-color: #1fbba6;
+    				border-color: #1ba593;
+    				color: white;
+    				padding: 6px 12px;
+    				margin-bottom: 0;
+   				font-size: 14px;
+    				font-weight: 400;
+    				border: 1px solid transparent;
+    				border-radius: 4px;
+			}
+			
+			.denglu h2{
+				clear: both;
+				font-size: 11px;
+    				margin: 0 auto;
+    				padding: 10px 10px 0;
+    				text-align: center;
+			}
+			
+			
+			.password span{
+				bottom: 0;
+    				color: #909090;
+    				display: inline-block;
+    				font-size: 14px;
+    				left: 5px;
+    				line-height: 35px;
+    				padding: 0 3px;
+    				position: absolute;
+    				top: 0;
+    				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/登录_logo.png"/>
+			<br />
+			<div class="denglu">
+				<h1>登录您的账户</h1>
+				<p>请输入您的用户名和密码。</p>
+				<form action="login.php" method="post">
+					<div class="user">
+						<input type="text" name="user" id="user" value="" placeholder="用户名/手机号/邮箱" />
+						<span>🐶</span>
+					</div>
+					<div class="password">
+						<input type="text" name="password" id="password" value="" placeholder="密码" />
+						<span>🔐</span>
+					</div>
+					
+					<input type="submit" id="btn" value="登录"/>
+				</form>
+				<h2>© 2015 Zi Consultants & Company.</h2>
+			</div> 
+		</div>
+	</body>
+	<script type="text/javascript">
+		var user=document.getElementById('user');
+		var mima=document.getElementById('password');
+		var denglu=document.getElementsByClassName('denglu')[0];
+		user.style.width=denglu.offsetWidth-130-25-30+'px';
+		mima.style.width=denglu.offsetWidth-130-25-30+'px';
+		window.onresize=function(){
+			user.style.width=denglu.offsetWidth-130-25-30+'px';
+			mima.style.width=denglu.offsetWidth-130-25-30+'px';
+		}
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

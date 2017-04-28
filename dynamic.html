@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			/*头部固定*/
+			
+			.header {
+				height: 60px;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				/*background-color: rgb(29, 155, 255);*/
+				overflow: hidden;
+				z-index: 100;
+			}
+			/*左边*/
+			
+			.a_pic {
+				float: left;
+				width: 120px;
+				height: 60px;
+				margin-left: 18%;
+				margin-top: 15px;
+			}
+			
+			.a_pic img {
+				width: 120px;
+				height: 30px;
+			}
+			/*右边*/
+			
+			.nav_right {
+				float: left;
+				overflow: hidden;
+				width: 350px;
+				margin-left: 30%;
+				margin-right: 5%;
+			}
+			
+			.nav_right li {
+				width: 70px;
+				height: 60px;
+				list-style: none;
+				float: left;
+			}
+			
+			.nav_right li a {
+				width: 70px;
+				height: 60px;
+				display: block;
+				text-decoration: none;
+				color: white;
+				font-size: 24px;
+				text-align: center;
+				line-height: 60px;
+			}
+			
+			.nav_right li a:hover {
+				background-color: rgb(52, 180, 255);
+			}
+			/*响应式@media*/
+			
+			@media only screen and (max-width: 1250px) {
+				.a_pic {
+					margin-left: 15%;
+				}
+				.nav_right {
+					margin-left: 22%;
+					margin-right: 5%;
+				}
+			}
+			
+			@media only screen and (max-width: 850px) {
+				.a_pic {
+					margin-left: 10%;
+				}
+				.nav_right {
+					margin-left: 20%;
+					margin-right: 5%;
+				}
+			}
+			
+			@media only screen and (max-width: 750px) {
+				.a_pic {
+					display: none;
+				}
+				.nav_right {
+					margin-left: 35%;
+					margin-right: 20%;
+				}
+			}
+			/*中间*/
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			.big_picture{
+				width: 100%;
+				position: relative;
+			}
+			.big_picture img{
+				width: 100%;
+				height: 100%;
+			}
+			.big_picture a{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+			}
+			/*新闻*/
+			.main{
+				width: 70%;
+				margin: 0 auto;
+				padding: 0 15px;
+			}
+			.row{
+				margin-top: 20px;
+				width: 100%;
+				position: relative;
+			}
+			.row_l{
+				position: absolute;
+				top: 0;
+				left: 0;
+    				width: 96px;
+    				height: 67px;
+    				margin: 0 15px;
+    				padding-top: 38px;
+    				background-image: url(img/动态_日期.png);
+			}
+			.row_l h1{
+    				text-align: center;
+    				margin-bottom: 10px;
+			}
+			.row_l p{
+				text-align: center;
+				font-size: 14px;
+			}
+			.row_r{
+				position: absolute;
+				top: 0;
+				left: 126px;
+				margin: 0 15px;
+				margin-bottom: 60px;
+			}
+			.biaoti{
+				margin: 20px 0 10px 0;
+				font-size: 24px;
+				color: black;
+				line-height: 1.1em;
+			}
+			.row_r p{
+				color: #51504c;
+				margin: 10px 0;
+				font-size: 14px;
+			}
+			.row_r p span{
+				margin-left: 36px;
+			}
+			.row_r p span a{
+				margin-left: 5px;
+    				color: #17acff;
+			}
+			.row_r .neirong{
+				color: #51504c;
+				margin-bottom: 15px;
+				
+			}
+			.row_r .quanwen{
+				font-weight: 600;
+    				color: #333;
+    				font-size: 14px;
+			}
+			.xian{
+				position: absolute;
+				left: 141px;
+				bottom: 0;
+				width: 50%;
+				border-bottom: 1px dashed black;
+			}
+			
+			/*底部*/
+			
+			.a_footer {
+				width: 100%;
+				height: 80px;
+				background-color: rgb(67, 67, 67);
+				text-align: center;
+				color: white;
+				padding-top: 30px;
+			}
+			
+			.a_footer p:nth-child(1) {
+				/*margin-top: 10px;*/
+				margin-bottom: 10px;
+			}
+			/*以上是头部底部*/
+		</style>
+	</head>
+
+	<body>
+		<!--头部固定-->
+		<div class="header">
+			<div class="a_pic">
+				<img src="img/首页logo-1.png" />
+			</div>
+			<ul class="nav_right">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="product.html">产品</a>
+				</li>
+				<li>
+					<a href="dynamic.html">动态</a>
+				</li>
+				<li>
+					<a href="about.html">关于</a>
+				</li>
+				<li>
+					<a href="login.html">登录</a>
+				</li>
+			</ul>
+		</div>
+		<!--中间-->
+		<div class="big_picture">
+			<img src="img/动态_大图.jpg" />
+			<a href="https://36kr.com/p/5038903.html"></a>
+		</div>
+		<div class="main">
+			<!--1-->
+			<div class="row">
+				<div class="row_l">
+					<h1>29</h1>
+					<p>Oct</p>
+				</div>
+				<div class="row_r">
+					<a class="biaoti" href="http://www.techweb.com.cn/news/2015-10-29/2219149.shtml">紫尘咨询联合百度推出实体商业目标客群画像服务</a>
+					<p>2015年10月29日<span>来源 <a href="http://www.techweb.com.cn/news/2015-10-29/2219149.shtml">techweb</a></span></p>
+					<p class="neirong">紫尘咨询联合百度推出国内首个专门面向实体商业的目标客群画像服务。服务包括基础客流数据采集、行为分析、目标客群画像、光谱选址等</p>
+					<a class="quanwen" href="http://www.techweb.com.cn/news/2015-10-29/2219149.shtml">阅读全文</a>
+				</div>
+				<div class="xian">
+					
+				</div>
+			</div>
+			<!--2-->
+			<div class="row">
+				<div class="row_l">
+					<h1>28</h1>
+					<p>Oct</p>
+				</div>
+				<div class="row_r">
+					<a class="biaoti" href="http://trade.zqcn.com.cn/ce_20151028_827049.html">“属地客群”概念诞生 促进实体商业发展</a>
+					<p>2015年10月28日<span>来源 <a href="http://trade.zqcn.com.cn/ce_20151028_827049.html">中国企业网</a></span></p>
+					<p class="neirong">近几年，互联网挟裹着它近乎宗教狂热的心理攻势，着实让每个实体商业主曾感到危机和焦虑，各种慌不择路已见怪不怪。不过别被互联网忽悠晕了。古往今来，天下生意就一句话：“找到你的客户，了解你的客户，满足你的客户”，今天是，未来还是。符合这个根本的技术就是好技术，否则可能就是坑。</p>
+					<a class="quanwen" href="http://trade.zqcn.com.cn/ce_20151028_827049.html">阅读全文</a>
+				</div>
+				<div class="xian">
+					
+				</div>
+			</div>
+			<!--3-->
+			<div class="row">
+				<div class="row_l">
+					<h1>28</h1>
+					<p>Oct</p>
+				</div>
+				<div class="row_r">
+					<a class="biaoti" href="http://mt.sohu.com/20151028/n424420460.shtml">黑科技－紫尘发布实体商业目标客群画像服务</a>
+					<p>2015年10月28日<span>来源 <a href="http://mt.sohu.com/20151028/n424420460.shtml">搜狐</a></span></p>
+					<p class="neirong">2015年10月27日，北京紫尘咨询有限责任公司联合百度在北京中关村3W咖啡召开新品发布会，推出国内首个专门面向任何实体商业的目标客群画像服务。</p>
+					<a class="quanwen" href="http://mt.sohu.com/20151028/n424420460.shtml">阅读全文</a>
+				</div>
+				<div class="xian">
+					
+				</div>
+			</div>
+			<!--4-->
+			<div class="row">
+				<div class="row_l">
+					<h1>26</h1>
+					<p>Oct</p>
+				</div>
+				<div class="row_r">
+					<a class="biaoti" href="https://36kr.com/p/5038903.html">线上线下两手抓：wi-beacon线下采集用户行为，Cusflo 提供用户画像</a>
+					<p>2015年10月26日<span>来源 <a href="https://36kr.com/p/5038903.html">36Kr</a></span></p>
+					<p class="neirong">尽管电商炒的火热，但截至去年年 底，全国零售业的交易额只有 7%来自线上电商，也就是说，线下的实体商业依旧是零售业发展的大头。可长期以来，线下零售商对数字和信息的处理并不恰当，有闭于信息孤岛的状态。</p>
+					<a class="quanwen" href="https://36kr.com/p/5038903.html">阅读全文</a>
+				</div>
+				<div class="xian">
+					
+				</div>
+			</div>
+			<!--5-->
+			<div class="row">
+				<div class="row_l">
+					<h1>21</h1>
+					<p>Aug</p>
+				</div>
+				<div class="row_r">
+					<a class="biaoti" href="http://www.kankan8.net/hotnews/newskankan8htmlr1x50821n419463273.html">店内wifi“同城投”引爆7夕[全城热恋]</a>
+					<p>2015年08月21日<span>来源 <a href="http://www.kankan8.net/hotnews/newskankan8htmlr1x50821n419463273.html">kankan8</a></span></p>
+					<p class="neirong">由北京紫尘咨询有限责任公司组织的7夕店内wifi(英文名：wi-beacon)“同城投”秀爱活动[全城热恋]已甜蜜落幕。短短一周时间，就有500百多对情侣参加，更有上千人积极参与点评“最佳情侣”的选票活动，效果超出预期，热情更超乎想象</p>
+					<a class="quanwen" href="hhttp://www.kankan8.net/hotnews/newskankan8htmlr1x50821n419463273.html">阅读全文</a>
+				</div>
+				<div class="xian">
+					
+				</div>
+			</div>
+			<!--6-->
+			<div class="row">
+				<div class="row_l">
+					<h1>03</h1>
+					<p>Aug</p>
+				</div>
+				<div class="row_r">
+					<a class="biaoti" href="http://www.ccidnet.com/2015/0803/10006849.shtml">互联网冲击下实体商业求生哲学</a>
+					<p>2015年08月03日<span>来源 <a href="http://www.ccidnet.com/2015/0803/10006849.shtml">赛迪网</a></span></p>
+					<p class="neirong">任何物种灭绝，一定是因为其自身设计存在历史局限。随着互联网跨越式发展，实体商业受到前所未有的挑战，被推到自然选择的审判席前。为突破“历史局限”、延续辉煌，实体商业正想尽办法投入互联网的怀抱，各种创意花招层出不穷无所不用其极，然而究竟是抓住了救命稻草，还是在错误泥潭里越陷越深？</p>
+					<a class="quanwen" href="http://www.ccidnet.com/2015/0803/10006849.shtml">阅读全文</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<!--底部-->
+		<div class="a_footer">
+			<p>客服热线：010-84402806 邮箱：contact@zicc.cc</p>
+			<p>北京紫尘咨询有限责任公司</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var rows=document.getElementsByClassName('row');
+		var rows_l=document.getElementsByClassName('row_l');
+		var rows_r=document.getElementsByClassName('row_r');
+		for(var i=0;i<rows.length;i++){
+			rows[i].style.height=rows_r[i].offsetHeight+60+'px';
+		}
+		window.onresize=function(){
+			for(var i=0;i<rows.length;i++){
+				rows[i].style.height=rows_r[i].offsetHeight+60+'px';
+			}
+		}
+	</script>
+	
+	<script type="text/javascript">
+	
+		window.onscroll = function(){ 
+  var t = document.documentElement.scrollTop || document.body.scrollTop; 
+  var top_div = document.querySelectorAll(".header"); 
+  if( t >= 300 ) { 
+    top_div[0].style.backgroundColor = "rgb(29,155,255)"; 
+  } else { 
+    top_div[0].style.backgroundColor = ""; 
+  } 
+} 
+
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Swiper demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min(1).css"/>
+		<link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+		<!-- Demo styles -->
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}			
+			html,body {
+				position: relative;
+				height: 100%;
+			}
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				/*background: #fff;*/
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				position: relative;
+			}
+			
+			
+			
+			
+			
+			
+			/*内容*/
+			
+			
+			.nav_right li:nth-child(2) a{
+				background-color: rgb(52, 180, 255);
+			}
+			/*一*/
+			.center_on{
+				margin: auto;
+				/*width: 495px;*/
+				width: 100%;
+				height: 410px;
+				margin-top: 80px;
+			}
+			.center_on img{
+				height: 100%;
+			}
+			
+			.center_one{
+				width: 300px;
+				height: 200px;
+				position: absolute;
+				top: 500px;
+				left: 40%;
+				/*border: 1px solid black;*/
+			}
+			.center_one h1{
+				color: white;
+			}
+			.center_one h4{
+				margin-top: 25px;
+				font-size: 21px;
+				color: white;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.center_one li{
+				width: 93px;
+				height: 43px;
+				margin: auto;
+				margin-top: 10px;
+				background-color: rgb(86,174,255);
+				text-align: center;
+			}
+			.center_one a{
+				line-height: 43px;
+				color: white;
+			}
+			/*二*/
+			.center_two{
+				width: 260px;
+				height: 200px;
+				text-align: left;
+				margin-left: 10%;
+			}
+			.center_two h1{
+				color: white;
+			}
+			.center_two h4{
+				margin-top: 25px;
+				font-size: 21px;
+				color: white;
+			}
+			.center_two li{
+				width: 93px;
+				height: 43px;
+				margin: auto;
+				margin-top: 10px;
+				margin-left: 10px;
+				background-color: rgb(86,174,255);
+				text-align: center;
+			}
+			.center_two a{
+				line-height: 43px;
+				color: white;
+			}
+			.center_tw{
+				width: 445px;
+				height: 445px;
+				margin-top: 80px;
+				margin-left: 200px;
+			}
+			.center_tw img{
+				width: 100%;
+				height: 100%;
+			}
+			
+			/*三*/
+			.center_three{
+				width: 290px;
+				height: 200px;
+				text-align: right;
+				margin-left: 10%;
+			}
+			.center_three h1{
+				color: white;
+			}
+			.center_three h4{
+				margin-top: 25px;
+				font-size: 21px;
+				color: white;
+			}
+			.center_three li{
+				width: 93px;
+				height: 43px;
+				margin: auto;
+				margin-top: 10px;
+				margin-right: 10px;
+				background-color: rgb(86,174,255);
+				text-align: center;
+			}
+			.center_three a{
+				line-height: 43px;
+				color: white;
+			}
+			.center_th{
+				width: 445px;
+				height: 445px;
+				margin-top: 80px;
+				margin-left: 200px;
+			}
+			.center_th img{
+				margin-top: -100px;
+				width: 100%;
+				height: 100%;
+			}
+	
+			#ul{
+				width: 50px;
+				position: absolute;
+				top: 47.5%;
+				right: 30px;
+				z-index: 9;
+			}
+			#ul li:nth-child(1){
+				position: absolute;
+				top: 0;
+				left: 0;
+				font-size: 10px;
+				color: white;
+				display: none;
+			}
+			#ul li:nth-child(2){
+				position: absolute;
+				top: 12px;
+				left: 0;
+				font-size: 10px;
+				color: white;
+				display: none;
+			}
+			#ul li:nth-child(3){
+				position: absolute;
+				top: 24px;
+				left: 0;
+				font-size: 10px;
+				color: white;
+				display: none;
+			}
+			
+			@media only screen and (max-width: 1250px) {
+				
+			}
+			
+			@media only screen and (max-width: 850px) {
+				.center_on{
+					height: 310px;
+				}
+				.center_one{
+					position: absolute;
+					top: 400px;
+					left: 30%;
+				}
+				
+				/*二*/
+				.center_two{
+					margin-left: 2%;
+				}
+				.center_two h4{
+					font-size: 17px;
+				}
+				.center_tw{
+					min-width: 445px;
+					margin-left: -100px;
+				}
+				
+				/*三*/
+				.center_three{
+					margin-right: 10%;
+				}
+				.center_three h4{
+					font-size: 15px;
+				}
+				.center_th{
+					margin-left: 50px;
+				}
+				
+			}
+			
+			@media only screen and (max-width: 750px) {
+				.center_on{
+					margin: auto;
+					/*width: 495px;*/
+					width: 100%;
+					height: 310px;
+					margin-left: 300px;
+					margin-top: 80px;
+				}
+				.center_on img{
+					height: 100%;
+				}
+				
+				.center_one{
+					width: 300px;
+					height: 200px;
+					position: absolute;
+						top: 400px;
+						left: 50%;
+					/*border: 1px solid black;*/
+				}
+				.center_one h1{
+					color: white;
+				}
+				.center_one h4{
+					margin-top: 25px;
+					font-size: 21px;
+					color: white;
+				}
+				li{
+					list-style: none;
+				}
+				a{
+					text-decoration: none;
+				}
+				.center_one li{
+					width: 93px;
+					height: 43px;
+					margin: auto;
+					margin-top: 10px;
+					background-color: rgb(86,174,255);
+					text-align: center;
+				}
+				.center_one a{
+					line-height: 43px;
+					color: white;
+				}
+				
+				/*二*/
+				.center_two{
+					width: 260px;
+					height: 200px;
+					min-width: 260px;
+					margin-left: 550px;
+				}
+				.center_two h4{
+					font-size: 17px;
+				}
+				.center_tw{
+					margin-left: 200px;
+				}
+				.center_tw{
+					width: 445px;
+					height: 445px;
+					min-width: 445px;
+					margin-top: 80px;
+					margin-left: 200px;
+				}
+				.center_tw img{
+					width: 100%;
+					height: 100%;
+				}
+				
+				/*三*/
+				.center_three{
+					display: none;
+					margin-right: 10%;
+				}
+				.center_th{
+					margin-left: 50px;
+				}
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<!--头部固定-->
+		<div class="header">
+			<div class="a_pic">
+				<img src="img/首页logo-1.png" />
+			</div>
+
+			<ul class="nav_right">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="product.html">产品</a>
+				</li>
+				<li>
+					<a href="dynamic.html">动态</a>
+				</li>
+				<li>
+					<a href="about.html">关于</a>
+				</li>
+				<li>
+					<a href="login.html">登录</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-color: rgb(76, 204, 0);">
+					<p class="center_on">
+						<img src="img/产品_主页_1.png"/>
+					</p>
+					<br />
+					<ul class="center_one">
+						<h1>客流指标分析</h1>
+						<h4>专利级的客流分析系统</h4>
+						<h4>5项复合KPI体系，一眼看透客流</h4>
+						<li><a href="product_one.html">查看详情</a></li>
+					</ul>
+				</div>
+				<div class="swiper-slide" style=" background-color: rgb(69, 148, 255);">
+					<div class="center_two">
+						<h1>用户头像</h1>
+						<h4>了解客户，拒绝盲目经营</h4>
+						<h4>6大维度/24项目/近300标签</h4>
+						<li><a href="product_two.html">查看详情</a></li>
+					</div>
+					<div class="center_tw">
+						<img src="img/产品_主页_2.png"/>
+					</div>
+				</div>
+				<div class="swiper-slide" style=" background-color: rgb(241, 185, 0);">
+					<div class="center_th">
+						<img src="img/产品_主页_3.png"/>
+					</div>
+					<div class="center_three">
+						<h1>智能硬件</h1>
+						<h4>wi-beacon小个子有大本领</h4>
+						<h4>256M内存/32M闪存/40人在线</h4>
+						<li><a href="http://wi-beacon.com/">查看详情</a></li>
+					</div>
+					
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<ul id="ul">
+				<li class="li">客流分析</li>
+				<li class="li">用户画像</li>
+				<li class="li">智能硬件</li>
+			</ul>
+		</div>
+		
+	</body>
+	<!-- Swiper JS -->
+<script src="js/swiper-3.3.1.min (1).js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				direction: 'vertical',
+				slidesPerView: 1,
+				paginationClickable: true,
+				spaceBetween: 30,
+				mousewheelControl: true
+			});
+		</script>
+		<script>
+			var swipers = document.querySelectorAll(".swiper-pagination-bullet");
+			var lis = document.querySelectorAll(".li");
+			for(var i = 0; i < 3; i++){
+				swipers[i].index = i;
+				swipers[i].onmouseover = function(){
+					lis[this.index].style.display = "block";
+				}
+				swipers[i].onmouseleave = function(){
+					lis[this.index].style.display = "none";
+				}
+				
+			}
+		</script>
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="css/firstpage.css"/>-->
+		<style type="text/css">
+		*{
+	padding: 0;
+	margin: 0;
+}
+
+
+/*头部固定*/
+.header{
+	z-index: 10;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*background-color: rgb(29,155,255);*/
+	overflow: hidden;
+}
+
+/*左边*/
+.a_pic{
+	float: left;
+	width: 120px;
+	height: 60px;
+	margin-left: 18%;
+	margin-top: 15px;
+	
+}
+.a_pic img{
+	width: 120px;
+	height: 30px;
+}
+/*右边*/
+.nav_right{
+	float: left;
+	overflow: hidden;
+	width: 350px;
+	margin-left: 30%;
+	margin-right: 5%;
+}
+.nav_right li{
+	width: 70px;
+	height: 60px;
+	list-style: none;
+	float: left;
+}
+.nav_right li a{
+	width: 70px;
+	height: 60px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	line-height: 60px;
+	
+}
+.nav_right li a:hover{
+	background-color: rgb(52,180,255);
+}
+
+
+/*响应式@media*/
+@media only screen and (max-width: 1250px) {
+	.a_pic{
+		margin-left: 15%;
+	}
+	.nav_right{
+	margin-left: 22%;
+	margin-right: 5%;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.a_pic{
+	margin-left: 10%;
+	}
+	.nav_right{
+	margin-left: 20%;
+	margin-right: 5%;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.a_pic{
+	display: none;
+	}
+	.nav_right{
+	margin-left: 35%;
+	margin-right: 20%;
+	}
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		.main_header{
+			/*margin-top: 60px;*/
+			overflow: hidden;
+			height: 390px;
+			width: 100%;
+		}
+			.animation{
+				position: relative;
+				height: 390px;
+				width: 100%;
+				overflow: hidden;
+			}
+			.ani1{
+				background-image: url(img/cusflo_banner-background.jpg);
+				background-size: 100% 100%;
+			}
+			.ani1 div:nth-child(1){
+				width: 380px;
+				position: absolute;
+				left: 22%;
+				top: 60px;
+			}
+			.ani1 div:nth-child(1) img{
+				width: 95%;
+			}
+			.ani1 div:nth-child(2){
+				width: 440px;
+				position: absolute;
+				left: 52%;
+				top: 130px;
+			}
+			.ani1 div:nth-child(2) img{
+				width: 60%;
+			}
+			.ani1 div:nth-child(3){
+				width: 250px;
+				height: 55px;
+				background-color: rgb(52,178,252);
+				position: absolute;
+				left: 52%;
+				top: 240px;
+				border-radius: 8px;
+			}
+			.ani1 div:nth-child(3) a{
+				display: block;
+				width: 250px;
+				height: 55px;
+				text-align: center;
+				line-height: 55px;
+				color: white;
+				font-size: 30px;
+				text-decoration: none;
+			}
+			
+			/*第二个*/
+			.ani2{
+				background-image: url(img/web_banner_bg.png);
+				background-size: 100% 180%;
+			}
+			.ani2 div:nth-child(1){
+				width: 380px;
+				position: absolute;
+				left: 22%;
+				top: 60px;
+			}
+			.ani2 div:nth-child(1) img{
+				width: 95%;
+			}
+			.ani2 div:nth-child(2){
+				width: 440px;
+				position: absolute;
+				left: 52%;
+				top: 120px;
+			}
+			.ani2 div:nth-child(2) img{
+				width: 55%;
+			}
+			.ani2 div:nth-child(3){
+				width: 250px;
+				height: 55px;
+				background-color: rgb(52,178,252);
+				position: absolute;
+				left: 52%;
+				top: 310px;
+				border-radius: 8px;
+			}
+			.ani2 div:nth-child(3) a{
+				display: block;
+				width: 250px;
+				height: 55px;
+				text-align: center;
+				line-height: 55px;
+				color: white;
+				font-size: 30px;
+				text-decoration: none;
+			}
+			
+			/*第三个*/
+			.ani3{
+				background-image: url(img/web_banner_bg.jpg);
+				background-size: 100% 180%;
+			}
+			.ani3 div:nth-child(1){
+				width: 380px;
+				position: absolute;
+				left: 22%;
+				top: 60px;
+			}
+			.ani3 div:nth-child(1) img{
+				width: 95%;
+			}
+			.ani3 div:nth-child(2){
+				width: 440px;
+				position: absolute;
+				left: 52%;
+				top: 120px;
+			}
+			.ani3 div:nth-child(2) img{
+				width: 55%;
+			}
+			.ani3 div:nth-child(3){
+				width: 250px;
+				height: 55px;
+				background-color: rgb(52,178,252);
+				position: absolute;
+				left: 52%;
+				top: 220px;
+				border-radius: 8px;
+			}
+			.ani3 div:nth-child(3) a{
+				display: block;
+				width: 250px;
+				height: 55px;
+				text-align: center;
+				line-height: 55px;
+				color: white;
+				font-size: 30px;
+				text-decoration: none;
+			}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	.a_two{
+	position: absolute;
+	/*top: 430px;*/
+	top: 390px;
+	left: 0;
+	width: 100%;
+	height: 800px;
+	background-image: url(img/首页bg1.jpg);
+	background-attachment:fixed;
+	background-position-y:100%;
+	background-size:cover ;
+	/*background: no-repeat;*/
+}
+.a_three{
+	position: absolute;
+	top: 1190px;
+	left: 0;
+	width: 100%;
+	height: 800px;
+	background-image: url(img/首页bg2.jpg);
+	background-size:cover ;
+	background-position-y:100%;
+	background-attachment:fixed;
+	/*background-position-y:  100%;*/
+}
+.a_four{
+	position: absolute;
+	top: 1990px;
+	left: 0;
+	width: 100%;
+	height: 800px;
+	background-image: url(img/首页bg3.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	/*background-position-y:  100%;*/
+}
+.a_five{
+	position: absolute;
+	top: 2790px;
+	left: 0;
+	width: 100%;
+	height: 800px;
+	background-image: url(img/首页bg4.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	/*background-position-y:  100%;*/
+	/*background: no-repeat;*/
+}
+
+
+
+
+
+.main_first{
+	z-index: 1000;
+	width: 100%;
+	height: 320px;
+	/*background-color: rgb(232,232,232);*/
+}
+.main_first img{
+	width: 100%;
+	/*height: 320px;*/
+}
+
+
+
+
+
+/*2.0图片下面四个图片的第一个*/
+.one_pic{
+	margin: auto;
+	width: 900px;
+	position: relative;
+}
+.one_pic div:nth-child(1){
+	position: absolute;
+	top: -100px;
+	left: 4%;
+	width: 50%;
+	height: 300px;
+}
+.one_pic div:nth-child(2){
+	position: absolute;
+	top: 100px;
+	left: 60%;
+	width: 50%;
+	height: 300px;
+}
+.one_pic div:nth-child(1) img{
+	width: 120%;
+}
+.one_pic div:nth-child(2) img{
+	width: 90%;
+}
+/*2.0图片下面四个图片的第二个*/
+.two_pic{
+	margin: auto;
+	width: 900px;
+	position: relative;
+}
+.two_pic div:nth-child(1){
+	position: absolute;
+	top: 80px;
+	left: 2%;
+	width: 50%;
+	height: 300px;
+}
+.two_pic div:nth-child(2){
+	position: absolute;
+	top: -120px;
+	left: 60%;
+	width: 50%;
+	height: 300px;
+}
+.two_pic div:nth-child(1) img{
+	width: 100%;
+}
+.two_pic div:nth-child(2) img{
+	width: 85%;
+}
+
+/*2.0下面四个图片的第三个*/
+.three_pic{
+	margin: auto;
+	width: 900px;
+	position: relative;
+}
+.three_pic div:nth-child(1){
+	position: absolute;
+	top: -100px;
+	left: 4%;
+	width: 50%;
+	height: 300px;
+}
+.three_pic div:nth-child(2){
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	width: 50%;
+	height: 300px;
+}
+.three_pic div:nth-child(1) img{
+	width: 55%;
+}
+.three_pic div:nth-child(2) img{
+	width: 90%;
+}
+
+
+/*2.0下面四个图片的第四个*/
+.five_pic{
+	margin: auto;
+	width: 900px;
+	/*height: 300px;*/
+	/*margin-left: 10%;
+	margin-right: 10%;*/
+	overflow: hidden;
+}
+.five_pic div{
+	float: left;
+	width: 50%;
+	height: 300px;
+}
+.five_pic div img{
+	width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+	.five_pic{
+	width: 900px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部*/
+.a_footer{
+	width: 100%;
+	height: 80px;
+	background-color: rgb(67,67,67);
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+	position: absolute;
+	top: 3830px;
+}
+.a_footer p:nth-child(1){
+	/*margin-top: 10px;*/
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 570px) {
+				/*.header{
+					position: relative;
+				}*/
+	       .header .nav_right{
+	       	/*background-color: red;*/
+	       	position: absolute;
+	       	top: 0;
+	       	/*left: -30px;*/
+	       	right: -50px;
+	       	margin-left: 0;
+	} 
+}
+
+
+		</style>
+	</head>
+	<body>
+			<!--固定部分-->
+		<!--头部固定-->
+	<div class="header">
+		<div class="a_pic">
+			<img src="img/首页logo-1.png"/>
+		</div>
+		
+		<ul class="nav_right">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="product.html">产品</a></li>
+			<li><a href="dynamic.html">动态</a></li>
+			<li><a href="about.html">关于</a></li>
+			<li><a href="login.html">登录</a></li>
+		</ul>
+	</div>
+		
+		
+		
+		<!--头部动画部分-->
+		<div class="main_header">
+			
+			<!--第一个-->
+			<div class="animation ani1">
+				<div><img src="img/cusflo_banner_interface.png"/></div>
+				<div><img src="img/cusflo_banner_character.png"/></div>
+				<div><a href="#">立即使用</a></div>
+			</div>
+			
+			<!--第二个-->
+			<div class="animation ani2">
+				<div><img src="img/web_banner_iphone.png"/></div>
+				<div><img src="img/web_banner_character.png"/></div>
+				<div><a href="#">立即使用</a></div>
+			</div>
+			
+			<!--第三个-->
+			<div class="animation ani3">
+				
+				<div><img src="img/cusflo_banner_interface-1.png"/></div>
+				<div><img src="img/web_banner_character-1.png"/></div>
+				<div><a href="#" onclick="toDownload()">立即使用</a></div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!--第一个背景-->
+		<div class="bg a_two">
+			<!--主体内容部分-->
+		<div class="main_first"><img src="img/cus2.0.jpg"/></div>
+		
+		<!--<div style="width: 100%;height: 300px;margin-top:500px;background-color: rgb(234,234,234);z-index: 100000;"></div>-->
+		</div>
+		<!--第二个背景-->
+		<div class="bg a_three">
+			<div style="width: 100%;height: 300px;background-color: rgb(234,234,234);">
+				<div class="one_pic">
+				<div><img src="img/know.png"/></div>
+				<div><img src="img/knowText.png"/></div>
+				</div>
+			</div>
+		
+		
+		</div>
+		
+		
+		<!--第三个背景-->
+		<div class="bg a_four">
+			<div style="width: 100%;height: 300px;background-color: rgb(234,234,234);z-index: 1000;">
+				<div class="two_pic photo">
+				<div><img src="img/findText.png"/></div>
+				<div><img src="img/find.png"/></div>
+				</div>
+			</div>
+				
+			</div>
+		
+		<!--第四个背景-->
+		<div class="bg a_five">
+			<div style="width: 100%;height: 300px;background-color: rgb(234,234,234);z-index: 1000;">
+				<div class="three_pic photo">
+				<div><img src="img/decide.png"/></div>
+				<div><img src="img/decideText.png"/></div>
+				</div>
+			</div>
+				
+				
+				
+				
+				
+			</div>
+		
+		<!--第五个固定-->
+		<div style="width: 100%;height: 300px;position: absolute;top: 3530px; background-color: rgb(234,234,234);">
+			<div class="five_pic photo">
+				<div><img src="img/perciseText.png"/></div>
+				<div><img src="img/percise.png"/></div>
+				</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--底部-->
+		<!--<br /><br />
+		<br /><br />
+		<!--底部-->
+		<div class="a_footer">
+			<p>客服热线：010-84402806 邮箱：contact@zicc.cc</p>
+			<p>北京紫尘咨询有限责任公司</p>
+		</div>
+		
+	</body>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var i, j;
+			$(function() {
+				i = $(".animation").length - 1;
+				j = i;
+				setInterval("Toggle()", 5000);
+			});
+
+			function Toggle() {
+
+				var m = j % i;
+
+				j++;
+
+				//alert(i+"-"+j+"-"+m);
+
+				$($(".animation").get(m)).slideToggle("fast")
+
+				//$("p").slideToggle("slow");
+
+			}
+
+			function toDownload() {
+				location.href = "http://7xiobe.com2.z0.glb.qiniucdn.com/downloadindex.html";
+			}
+			
+			
+	</script>
+	
+	<script type="text/javascript">
+	
+		window.onscroll = function(){ 
+  var t = document.documentElement.scrollTop || document.body.scrollTop; 
+  var top_div = document.querySelectorAll(".header"); 
+  if( t >= 300 ) { 
+    top_div[0].style.backgroundColor = "rgb(29,155,255)"; 
+  } else { 
+    top_div[0].style.backgroundColor = ""; 
+  } 
+} 
+
+	</script>
+</html>
+
